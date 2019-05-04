@@ -1,0 +1,32 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+//função de x
+  float intecertoEmX(int x, int y){
+		float x2 = x,z = y, res;
+		res = z/x;
+		return res;
+	}
+//função de y
+	float intecertoEmY(int x, int y){
+		float z = y * -1;
+		return z;
+	}
+	
+
+ 	int main(){
+ 		int x, x2, y;
+ 		//entrada de vezes
+ 		cin >> x;
+ 		
+ 		for(int i = 0; x > i ; i++){
+    
+ 			cin >> x2 >> y;
+	 	//saida dos eixos		
+ 			cout <<  "interceto em x : " <<	setprecision(2) <<	intecertoEmX(x2,y) << " ,0.00" << endl; 			
+			cout <<  "interceto em y : 0.00 ," << setprecision(2) << intecertoEmY(x2,y) << endl ; 			 						
+ 			
+ 		}
+	
+	
+	}
